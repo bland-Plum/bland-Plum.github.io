@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>인기 게임 소개 사이트</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+        .genre-bar {
+            display: flex;
+            background-color: #555;
+            color: white;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .genre-section {
+            flex: 1;
+            padding: 10px;
+            cursor: pointer;
+        }
+        .game-list {
+            display: none;
+            padding-left: 20px;
+        }
+        .game {
+            background-color: white;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+        }
+        .game h3 {
+            margin: 0;
+        }
+        .game-details {
+            display: none;
+            margin-top: 10px;
+        }
+        .game img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .game p {
+            margin: 10px 0;
+        }
+        .game video {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>인기 게임 소개 사이트</h1>
+    </header>
+    <div class="container">
+        <div class="genre-bar">
+            <div class="genre-section" onclick="toggleGameList('fps')">FPS 게임</div>
+            <div class="genre-section" onclick="toggleGameList('rpg')">롤플레잉 게임</div>
+            <div class="genre-section" onclick="toggleGameList('sports')">스포츠 게임</div>
+        </div>
+        <div id="fps" class="game-list">
+            <div class="game" onclick="toggleDetails(this)">
+                <h3>게임 이름: RainbowSix Siege</h3>
+                <div class="game-details">
+                    <img src="fps게임1이미지.jpg" alt="FPS 게임1 이미지">
+                    <p><strong>장점:</strong> 다양</p>
+                    <p><strong>단점:</strong> 반복적인 미션, 짧은 캠페인</p>
+                    <video controls>
+                        <source src="fps게임1소개영상.mp4" type="video/mp4">
+                        브라우저가 비디오 태그를 지원하지 않습니다.
+                    </video>
+                </div>
+            </div>
+            <div class="game" onclick="toggleDetails(this)">
+                <h3>게임 이름: FPS 게임2</h3>
+                <div class="game-details">
+                    <img src="fps게임2이미지.jpg" alt="FPS 게임2 이미지">
+                    <p><strong>장점:</strong> 팀플레이, 전략성</p>
+                    <p><strong>단점:</strong> 복잡한 조작, 높은 진입장벽</p>
+                    <video controls>
+                        <source src="fps게임2소개영상.mp4" type="video/mp4">
+                        브라우저가 비디오 태그를 지원하지 않습니다.
+                    </video>
+                </div>
+            </div>
+            <div class="game" onclick="toggleDetails(this)">
+                <h3>게임 이름: FPS 게임3</h3>
+                <div class="game-details">
+                    <img src="fps게임3이미지.jpg" alt="FPS 게임3 이미지">
+                    <p><strong>장점:</strong> 빠른 게임 진행, 다양한 맵</p>
+                    <p><strong>단점:</strong> 잦은 업데이트, 서버 불안정</p>
+                    <video controls>
+                        <source src="fps게임3소개영상.mp4" type="video/mp4">
+                        브라우저가 비디오 태그를 지원하지 않습니다.
+                    </video>
+                </div>
+            </div>
+        </div>
+
+        <div id="rpg" class="game-list">
+            <div class="game" onclick="toggleDetails(this)">
+                <h3>게임 이름: 롤플레잉 게임1</h3>
+                <div class="game-details">
+                    <img src="rpg게임1이미지.jpg" alt="롤플레잉 게임1 이미지">
+                    <p><strong>장점:</strong> 깊이 있는 스토리, 캐릭터 커스터마이징</p>
+                    <p><strong>단점:</strong> 긴 플레이 시간, 복잡한 시스템</p>
+                    <video controls>
+                        <source src="rpg게임1소개영상.mp4" type="video/mp4">
+                        브라우저가 비디오 태그를 지원하지 않습니다.
+                    </video>
+                </div>
+            </div>
+            <div class="game" onclick="toggleDetails(this)">
+                <h3>게임 이름: 롤플레잉 게임2</h3>
+                <div class="game-details">
+                    <img src="rpg게임2이미지.jpg" alt="롤플레잉 게임2 이미지">
+                    <p><strong>장점:</strong> 방대한 세계관, 다양한 직업</p>
+                    <p><strong>단점:</strong> 높은 진입 장벽, 시간 소모</p>
+                    <video controls>
+                        <source src="rpg게임2소개영상.mp4" type="video/mp4">
+                        브라우저가 비디오 태그를 지원하지 않습니다.
+                    </video>
+                </div>
+            </div>
+            <div class="game" onclick="toggleDetails(this)">
+                <h3>게임 이름: 롤플레잉 게임3</h3>
+                <div class="game-details">
+                    <img src="rpg게임3이미지.jpg" alt="롤플레잉 게임3 이미지">
+                    <p><strong>장점:</strong> 다양한 선택지, 몰입감 높은 이야기</p>
+                    <p><strong>단점:</strong> 무거운 스토리, 잦은 업데이트</p>
+                    <video controls>
+                        <source src="rpg게임3소개영상.mp4" type="video/mp4">
+                        브라우저가 비디오 태그를 지원하지 않습니다.
+                    </video>
+                </div>
+            </div>
+        </div>
+
+        <div id="sports" class="game-list">
+            <div class="game" onclick="toggleDetails(this)">
+                <h3>게임 이름: 스포츠 게임1</h3>
+                <div class="game-details">
+                    <img src="sports게임1이미지.jpg" alt="스포츠 게임1 이미지">
+                    <p><strong>장점:</strong> 현실적인 그래픽, 다양한 모드</p>
+                    <p><strong>단점:</strong> 가끔 발생하는 버그, 높은 시스템 요구사항</p>
+                    <video controls>
+                        <source src="sports게임1소개영상.mp4" type="video/mp4">
+                        브라우저가 비디오 태그를 지원하지 않습니다.
+                    </video>
+                </div>
+            </div>
+            <div class="game" onclick="toggleDetails(this)">
+                <h3>게임 이름: 스포츠 게임2</h3>
+                <div class="game-details">
+                    <img src="sports게임2이미지.jpg" alt="스포츠 게임2 이미지">
+                    <p><strong>장점:</strong> 다양한 팀, 사실적인 경기</p>
+                    <p><strong>단점:</strong> 반복적인 경기, 높은 가격</p>
+                    <video controls>
+                        <source src="sports게임2소개영상.mp4" type="video/mp4">
+                        브라우저가 비디오 태그를 지원하지 않습니다.
+                    </video>
+                </div>
+            </div>
+            <div class="game" onclick="toggleDetails(this)">
+                <h3>게임 이름: 스포츠 게임3</h3>
+                <div class="game-details">
+                    <img src="sports게임3이미지.jpg" alt="스포츠 게임3 이미지">
+                    <p><strong>장점:</strong> 다양한 리그, 멀티플레이 지원</p>
+                    <p><strong>단점:</strong> 서버 문제, 반복적인 플레이</p>
+                    <video controls>
+                        <source src="sports게임3소개영상.mp4" type="video/mp4">
+                        브라우저가 비디오 태그를 지원하지 않습니다.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        let lastOpened = null;
+
+        function toggleGameList(id) {
+            const gameList = document.getElementById(id);
+            if (gameList.style.display === 'block') {
+                gameList.style.display = 'none';
+            } else {
+                if (lastOpened !== null && lastOpened !== id) {
+                    document.getElementById(lastOpened).style.display = 'none';
+                }
+                gameList.style.display = 'block';
+                lastOpened = id;
+            }
+        }
+
+        function toggleDetails(element) {
+            const details = element.querySelector('.game-details');
+            if (details.style.display === 'block') {
+                details.style.display = 'none';
+            } else {
+                details.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>
