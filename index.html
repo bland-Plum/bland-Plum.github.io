@@ -12,7 +12,7 @@
             padding: 0;
         }
         header {
-            background-color: #333;
+            background-color: #152455;
             color: white;
             padding: 10px 0;
             text-align: center;
@@ -24,7 +24,7 @@
         }
         .genre-bar {
             display: flex;
-            background-color: #555;
+            background-color: #152455;
             color: white;
             padding: 10px;
             margin: 10px 0;
@@ -56,7 +56,7 @@
             margin-top: 10px;
         }
         .game img {
-            max-width: auto;
+            max-width: 100%;
             height: auto;
             border-radius: 5px;
         }
@@ -74,12 +74,13 @@
             <div class="genre-section" onclick="toggleGameList('fps')">FPS 게임</div>
             <div class="genre-section" onclick="toggleGameList('rpg')">롤플레잉 게임</div>
             <div class="genre-section" onclick="toggleGameList('sports')">스포츠 게임</div>
+            <div class="genre-section" onclick="toggleGameList('horror')">공포 게임</div>
         </div>
         <div id="fps" class="game-list">
             <div class="game" onclick="toggleDetails(this)">
                 <h3>게임 이름: RainbowSix Siege</h3>
                 <div class="game-details">
-                    <img src="레식.jpg" alt="FPS 게임1 이미지">
+                    <img src="레식.jpg" alt="FPS 게임1 이미지" width="700" height="1000">
                     <p><strong>장점:</strong> 생동감 있는 그래픽, 더불어 다양한 캐릭터와 전략을 구사하여 친구들과 함께 즐길 수 있는 게임</p>
                     <p><strong>단점:</strong> 일단  먼저 이 게임은 무료가 아닌 유료게임다.<br>장기적으로 봤을 때 반복성이 느껴질 수 있으며 다소 높다고 느낄 수 있는 유저들의 개인 역량</p>
                 </div>
@@ -87,7 +88,7 @@
             <div class="game" onclick="toggleDetails(this)">
                 <h3>게임 이름: VALORANT</h3>
                 <div class="game-details">
-                    <img src="발로란트.jpg" alt="FPS 게임2 이미지">
+                    <img src="발로란트.jpg" alt="FPS 게임2 이미지" width="700" height="1000">
                     <p><strong>장점:</strong> 무료로 제공되는 게임이자 언제나 인기가 많은 게임인 롤, 즉 Riot에서 낸 게임으로 현재 많은 유저들이 즐기고 있는 게임 중 하나이다.</p>
                     <p><strong>단점:</strong> 각 캐릭터 마다 사용할 수 있는 스킬들이 존재하기에 고전 FPS게임같이 총을 주로 한다기 보단 스킬과 함께 타이밍에 맞춰 사용한다는 것에 있어 처음 이 게임을 접하는 사람들에겐 다소 어렵다고 느껴질 수 있다.</p>
                 </div>
@@ -95,87 +96,90 @@
             <div class="game" onclick="toggleDetails(this)">
                 <h3>게임 이름: Counter Strike</h3>
                 <div class="game-details">
-                    <img src="카스.jpg" alt="FPS 게임3 이미지">
-                    <p><strong>장점:</strong> 빠른 게임 진행, 다양한 맵</p>
-                    <p><strong>단점:</strong>, 서버 불안정</p>
+                    <img src="카스.jpg" alt="FPS 게임3 이미지" width="700" height="1000">
+                    <p><strong>장점:</strong> 무료로 제공되는 게임이자 나온지 오래된 고전 FPS 게임으로 오랫동안 FPS 게임들 중에서 한자리를 꿰차고 있다.</p>
+                    <p><strong>단점:</strong> 오래된 게임인 만큼 현재 출시되는 게임들에 비해서 그래픽이 다소 안좋다고 느낄 수 있다.</p>
                 </div>
             </div>
         </div>
 
         <div id="rpg" class="game-list">
             <div class="game" onclick="toggleDetails(this)">
-                <h3>게임 이름: 롤플레잉 게임1</h3>
+                <h3>게임 이름: Stardew Valley</h3>
                 <div class="game-details">
-                    <img src="rpg게임1이미지.jpg" alt="롤플레잉 게임1 이미지">
-                    <p><strong>장점:</strong> 깊이 있는 스토리, 캐릭터 커스터마이징</p>
-                    <p><strong>단점:</strong> 긴 플레이 시간, 복잡한 시스템</p>
-                    <video controls>
-                        <source src="rpg게임1소개영상.mp4" type="video/mp4">
-                        브라우저가 비디오 태그를 지원하지 않습니다.
-                    </video>
+                    <img src="스듀.jpg" alt="RPG 게임1 이미지" width="700" height="1000">
+                    <p><strong>장점:</strong> 도트 그래픽으로 디자인된 게임으로 상당히 평화로운 세상을 만끽하며 즐길 수 있는 게임이다.<br>게임이름에 걸맞게 1인용 농장게임으로 계절에 따라 다른 작물을 수확하여 자신의 생계를 꾸려 나가며 즐길 수 있는 게임이다.<br>1인용뿐만 아니라 여러명이서 함께 같이 멀티로도 즐길 수 있다.</p>
+                    <p><strong>단점:</strong> 도트 그래픽은 사람들에 따라 다르겠지만 선호하는 사람도 있고 요즘 나오는 게임들에 비해 어째서 도트그래픽이냐 하면서 싫어하는 사람도 있다.</p>
                 </div>
             </div>
             <div class="game" onclick="toggleDetails(this)">
-                <h3>게임 이름: 롤플레잉 게임2</h3>
+                <h3>게임 이름: LOST ARK</h3>
                 <div class="game-details">
-                    <img src="rpg게임2이미지.jpg" alt="롤플레잉 게임2 이미지">
-                    <p><strong>장점:</strong> 방대한 세계관, 다양한 직업</p>
-                    <p><strong>단점:</strong> 높은 진입 장벽, 시간 소모</p>
-                    <video controls>
-                        <source src="rpg게임2소개영상.mp4" type="video/mp4">
-                        브라우저가 비디오 태그를 지원하지 않습니다.
-                    </video>
+                    <img src="로아.jpeg" alt="롤플레잉 게임2 이미지" width="700" height="1000">
+                    <p><strong>장점:</strong> 다양한 직업이 존재하며 세계관이 매우 방대하여 스토리를 좋아하는 사람이라면 충분히 재밌게 즐길 수 있는 게임될것이다. 게임에 즐길 수 있는 방향이 정말 다양하다.</p>
+                    <p><strong>단점:</strong> 과금 요소가 다소 보인다. 개인의 캐릭터가 어느정도 성장해야 다음 파트를 할 수 있게 되는데 그 성장을 하는 파트가 정말 많은 자원이 들게 되며 거기서 과금 요소가 추가된다.</p>
                 </div>
             </div>
             <div class="game" onclick="toggleDetails(this)">
-                <h3>게임 이름: 롤플레잉 게임3</h3>
+                <h3>게임 이름: FROST PUNK</h3>
                 <div class="game-details">
-                    <img src="rpg게임3이미지.jpg" alt="롤플레잉 게임3 이미지">
-                    <p><strong>장점:</strong> 다양한 선택지, 몰입감 높은 이야기</p>
-                    <p><strong>단점:</strong> 무거운 스토리, 잦은 업데이트</p>
-                    <video controls>
-                        <source src="rpg게임3소개영상.mp4" type="video/mp4">
-                        브라우저가 비디오 태그를 지원하지 않습니다.
-                    </video>
+                    <img src="프펑.jpeg" alt="롤플레잉 게임3 이미지" width="700" height="1000">
+                    <p><strong>장점:</strong> 생존게임으로 자신의 부족을 책임지고 혹한에서 살아남는 게임이라고 생각하면 된다. 자신의 판단에 따라 생존 여부가 결정되고 필요한 물자가 무엇인지 판단하고 전략도 매우 중요한 게임으로 현실감 있게 플레이할 수 있다.</p>
+                    <p><strong>단점:</strong> 게임안에 존재하는 그 세계관의 법도 존재하고 다양한 제약이 존재하므로 플레이할 때 다소 어려움을 느낄 수 있다. 즉 게임 진입 장벽이 개개인에 따라 다르긴 하겠지만 개인적으로 다소 높다고 생각한다.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="horror" class="game-list">
+            <div class="game" onclick="toggleDetails(this)">
+                <h3>게임 이름: Dead By Daylight</h3>
+                <div class="game-details">
+                    <img src="데바데.jpg" alt="공포 게임1 이미지" width="700" height="1000">
+                    <p><strong>장점:</strong> 5인용 게임으로 친구들끼리만 즐기기 좋고 살인마를 피해다니는 숨바꼭질 게임이다.<br>어렸을 때 모두 다 접해볼만한 숨바꼭질을 주제로 하였기에 충분히 즐길 수 있다고 생각한다.</p>
+                    <p><strong>단점:</strong> 이 게임은 협동심이 매우 중요한데 살인마를 제외한 4명의 생존자들 중에서 비판하는 것은 아니지만 게임을 진행하는 와중에 4명 중 한명까지는 괜찮을지 몰라도 2명이 실력이 부족하다면 게임진행에 있어 매우 큰 어려움을 느끼끼 쉽다.</p>
+                </div>
+            </div>
+            <div class="game" onclick="toggleDetails(this)">
+                <h3>게임 이름: 바이오하자드</h3>
+                <div class="game-details">
+                    <img src="바이오하자드.jpg" alt="공포 게임2 이미지" width="700" height="1000">
+                    <p><strong>장점:</strong> 이 게임은 시리즈가 매우 많다. 간단하게 시리즈로만 치면 바이오하자드 7까지 있지만 각 시리즈 중에서 또 다르게 파생된 게임들을 다 함치면 총 21개로 매우 많은 시리즈를 포함하고 있다.<br>그러므로 즐길 수 있는 스토리가 매우 다양하고 하나씩 깨면서 나아가는 재미를 알 수 있다.</p>
+                    <p><strong>단점:</strong> 시리즈가 많은 만큼 어떤 사람들에겐 다소 지루하게 느껴질 수도 있다. 또한 각 시리즈들 마다 분량이 많기에 전부 다 깨는걸 목표로 해서 하다보면 매우 지루해 질 수도 있다.</p>
+                </div>
+            </div>
+            <div class="game" onclick="toggleDetails(this)">
+                <h3>게임 이름: Lethal Company</h3>
+                <div class="game-details">
+                    <img src="리썰.jpg" alt="공포 게임3 이미지" width="700" height="1000">
+                    <p><strong>장점:</strong> 4인용 게임으로 친구들과 재밌게 즐길 수 있고 다양한 괴물들을 피하거나 상대하여 건물 내에 있는 물건을 찾아서 돈을 버는 집중력과 관찰력이 필요한 게임이다.<br>친구들과의 협동심도 매우 필요하다.</p>
+                    <p><strong>단점:</strong> 뒤로 가면갈수록 급격히 상승하는 난이도에 어려움을 느끼고 엔딩을 보지못하는 사람들이 있다.</p>
                 </div>
             </div>
         </div>
 
         <div id="sports" class="game-list">
             <div class="game" onclick="toggleDetails(this)">
-                <h3>게임 이름: 스포츠 게임1</h3>
+                <h3>게임 이름: FIFA</h3>
                 <div class="game-details">
-                    <img src="sports게임1이미지.jpg" alt="스포츠 게임1 이미지">
-                    <p><strong>장점:</strong> 다양한 모드</p>
-                    <p><strong>단점:</strong> 높은 시스템 요구사항</p>
-                    <video controls>
-                        <source src="sports게임1소개영상.mp4" type="video/mp4">
-                        브라우저가 비디오 태그를 지원하지 않습니다.
-                    </video>
+                    <img src="피파.jpg" alt="스포츠 게임1 이미지" width="700" height="1000">
+                    <p><strong>장점:</strong> 현대 피파는 FIFA 4까지 나왔는데 많은 단계를 거쳐 만들어졌기에 현실감이 매우 좋아졌다. 실제 전략을 활용하여 게임을 플레이 할 수 있게 되었고 AI도 정말 뛰어나게 진화했기에 플레이하기 용이하다.</p>
+                    <p><strong>단점:</strong> 그래도 게임이다보니 실제 현실감을 구현하기 위하여 노력했다는 것은 알겠지만 그래도 사람들이 느끼기엔 다소 부족할 수도 있다고 생각이 든다. 그리고 이 게임이 강화 시스템이 존재하는데 그 강화 시스템의 확률이 극악이라고 사람들이 말하며 그 강화가 높으면 높을 수록 개개인의 구단 편차가 심해지기 시작한다.</p>
                 </div>
             </div>
             <div class="game" onclick="toggleDetails(this)">
-                <h3>게임 이름: 스포츠 게임2</h3>
+                <h3>게임 이름: NBA2k24</h3>
                 <div class="game-details">
-                    <img src="sports게임2이미지.jpg" alt="스포츠 게임2 이미지">
-                    <p><strong>장점:</strong> 다양한 팀, 사실적인 경기</p>
-                    <p><strong>단점:</strong> 반복적인 경기, 높은 가격</p>
-                    <video controls>
-                        <source src="sports게임2소개영상.mp4" type="video/mp4">
-                        브라우저가 비디오 태그를 지원하지 않습니다.
-                    </video>
+                    <img src="NBA.jpeg" alt="스포츠 게임2 이미지" width="700" height="1000">
+                    <p><strong>장점:</strong> 매년에 맞춰 새로운 시즌으로 나오는 게임인데 농구 게임중에선 거의 탑이라고 할 수 있다. 생생한 현실감과 실제 전략을 활용하여 플레이 할 수도 있다.</p>
+                    <p><strong>단점:</strong> 다만 이 게임은 유저들 중에선 추천이 되고 있지는 않다. 먼저 게임상의 오류가 다수 존재하고 유저들의 의견을 제대로 수렴해주고 있지 않으며 최적화 문제 인터넷 연결 문제 등이 올라오고 있다.</p> 
                 </div>
             </div>
             <div class="game" onclick="toggleDetails(this)">
-                <h3>게임 이름: 스포츠 게임3</h3>
+                <h3>게임 이름: MLB THE SHOW</h3>
                 <div class="game-details">
-                    <img src="sports게임3이미지.jpg" alt="스포츠 게임3 이미지">
-                    <p><strong>장점:</strong> 다양한 리그, 멀티플레이 지원</p>
-                    <p><strong>단점:</strong> 서버 문제, 반복적인 플레이</p>
-                    <video controls>
-                        <source src="sports게임3소개영상.mp4" type="video/mp4">
-                        브라우저가 비디오 태그를 지원하지 않습니다.
-                    </video>
+                    <img src="MLB.jpeg" alt="스포츠 게임3 이미지" width="700" height="1000">
+                    <p><strong>장점:</strong> 현존하는 유일한 콘솔 3D 야구게임이다. 매년에 맞춰 새로운 시즌으로 나오는 게임이고 실제 야구와 똑같은 룰로 현실감 있게 게임을 즐길 수 있다.</p>
+                    <p><strong>단점:</strong> 게임의 언어의 다양성이 부족하다. 오로지 영어로만 게임을 플레이할 수 있다. 게이머의 플레이를 게임 시스템이 주관적으로 관여하는데 선수의 스텟에 따라 결과가 실력과 무관하게 차이가 난다는 점이다.</p>
                 </div>
             </div>
         </div>
